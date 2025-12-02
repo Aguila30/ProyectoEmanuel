@@ -2,7 +2,7 @@
     require_once './app/config/Connect.php';
     $connect = new Connect();
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html> //cambio
 <html lang="en">
 <head>
   <meta charset="utf-8">
