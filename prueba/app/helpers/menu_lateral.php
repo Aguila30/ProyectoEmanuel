@@ -20,6 +20,22 @@
         $menu_item['submenu'] = array();
         $menu['usuarios'] = $menu_item;
 
+        //Opcion Nominaciones
+        $menu_item['is_active'] = (($pagina == 'Nominaciones') ? true : false );
+        $menu_item['href'] = './nominaciones.php';
+        $menu_item['icon'] = 'fas fa-user';
+        $menu_item['text'] = 'Nominaciones';
+        $menu_item['submenu'] = array();
+        $menu['nominaciones'] = $menu_item;
+        
+        //Opcion Artista
+        $menu_item['is_active'] = (($pagina == 'artistas') ? true : false );
+        $menu_item['href'] = './artistas.php';
+        $menu_item['icon'] = 'fas fa-user';
+        $menu_item['text'] = 'Artista';
+        $menu_item['submenu'] = array();
+        $menu['artistas'] = $menu_item;
+
         // //Opcion MultiLevel
         // $menu_item['is_active'] = ($pagina == 'OPCIONPRINCIPAL') ? true : false ;
         // $menu_item['href'] = '#';

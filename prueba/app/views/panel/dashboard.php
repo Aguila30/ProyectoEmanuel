@@ -19,7 +19,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | Blank Page</title>
+    <title >MTV Awards</title>
 
     <!-- Icon -->
     <link rel="icon" href="../../../recursos/img/system/mtv-logo.jpg" type="image/x-icon">
@@ -81,7 +81,7 @@
             <a href="../../index3.html" class="brand-link">
                 <img src="../../../recursos/img/system/mtv-logo.jpg" alt="AdminLTE Logo"
                     class="brand-image elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">MTV Awards</span>
+                <span class="brand-text font-weight-light text-align: center">MTV Awards</span>
             </a>
 
             <!-- Sidebar -->
@@ -132,7 +132,8 @@
                         // ),
                         array(
                             'tarea' => 'Dashboard',   
-                            'href' => '#'   
+                            'href' => '#' 
+                              
                         )
                     );    
                     echo mostrar_breadcrumb('Dashboard', $breadcrumb); 
@@ -146,7 +147,7 @@
                 <!-- Default box -->
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Title</h3>
+                        <h3 class="card-title">MTVAwards</h3>
 
                         <div class="card-tools">
                             <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -158,7 +159,7 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        Start creating your amazing application!
+                        Gestión de registros controlados por el administrador
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">

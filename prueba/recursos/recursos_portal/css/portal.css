@@ -1,0 +1,105 @@
+/* portal.css - Estilos para el Frontend de MTV Awards */
+
+/* Variables de colores MTV */
+:root {
+    --mtv-yellow: #FFFF00;
+    --mtv-black: #121212;
+    --mtv-dark-gray: #1E1E1E;
+}
+
+body {
+    background-color: var(--mtv-black);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, .mtv-font {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Navbar personalizado */
+.navbar-mtv {
+    background-color: black !important;
+    border-bottom: 3px solid var(--mtv-yellow);
+}
+
+/* Hero Banner Principal */
+.hero-section {
+    /* Ajusta la ruta de la imagen de fondo si es necesario, relativa al CSS */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('../../img/system/mtv-bg-concert.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 80vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    color: var(--mtv-yellow);
+    text-shadow: 4px 4px 0px #fff;
+}
+
+.btn-mtv {
+    background-color: var(--mtv-yellow);
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 15px 40px;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    transition: all 0.3s;
+}
+
+.btn-mtv:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
+}
+
+/* Tarjetas de Tendencias */
+.card-trend {
+    background-color: var(--mtv-dark-gray);
+    border: none;
+    border-radius: 0;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.card-trend:hover {
+    transform: translateY(-10px);
+    border: 2px solid var(--mtv-yellow);
+}
+
+.card-trend img {
+    height: 250px;
+    object-fit: cover;
+    filter: grayscale(80%);
+    transition: filter 0.3s;
+}
+
+.card-trend:hover img {
+    filter: grayscale(0%);
+}
+
+.section-title {
+    border-left: 5px solid var(--mtv-yellow);
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+/* Banner de Votación */
+.vote-banner {
+    background-color: var(--mtv-yellow);
+    color: black;
+    padding: 60px 0;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+}

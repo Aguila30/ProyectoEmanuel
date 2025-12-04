@@ -1,5 +1,5 @@
 <?php
-    require_once './app/config/Connect.php';
+    require_once './app/config/Connect.php';  
     $connect = new Connect();
 ?>
 <!DOCTYPE html>
@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MTVAwards | Inicio Sesión</title>
+  <title>MTVAwards| Inicio Sesión</title>
   <!-- Icon -->
   <link rel="icon" href="./recursos/img/system/mtv-logo.jpg" type="image/x-icon">
 
@@ -21,7 +21,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="./recursos/recursos_panel/css/adminlte.min.css">
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style= "background-color: black">
 
   <?php
     if(isset($_GET['error']) && isset($_GET["type"])){
@@ -38,7 +38,7 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-dark">
     <div class="card-header text-center">
-      <a href="../../index2.html" class="h1"><b>MTV </b>Awards</a>
+      <a href="../../index2.html" class="h1" style= "color: black" ><b style= "color: yellow">MTV </b>Awards</a>
     </div>
 
     <div class="card-body">
